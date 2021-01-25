@@ -1,0 +1,60 @@
+body
+{
+	background-color: #3333CC;
+	margin: 0px;
+	padding: 0px;
+}
+
+/* Оттеное верхней навигации */
+.topnav
+{
+    background-color: #3300CC;
+    /* overflow: hidden; Стоит изучить подробно */
+    text-align: center; /* Ставит навигацию по середине */
+}
+
+/* Стиль ссылок внутри панели навигации */
+.topnav a
+{
+	/* float: left Стоит изучить подробно */
+    color: #f2f2f2;
+    text-align: center; /* Не понимаю зачем оно тут, наверное ставит текст по центру кнопки */
+    padding: 5px 20px 5px 20px; /* Растояние между текстом */
+    text-decoration: none; /* Убирает линию под текстом ссылки*/
+    font-size: 20px;
+}
+
+/* Изменить цвет ссылок при наведении */
+.topnav a:hover /* Стоит изучить это : */
+{
+    background-color: #6666FF;
+    color: #6600CC;
+}
+
+/* Добавьте цвет к активной / текущей ссылке */
+.topnav a.active /* Стоит изучить это . */
+{
+    background-color: #3a4dab;
+    color: #330066;
+}
+
+.FayrushinFadis
+{
+	color: white;
+	text-align: center;
+	background-color: #3300CC;
+	margin: 10px 760px 0px 760px;
+}
+
+.HomeProject
+{
+	padding: 100px;
+	background-color: #333333;
+	color: #666666;
+}
+
+.NoLinkDecoration
+{
+	text-decoration: none;
+	color: purple;
+}
