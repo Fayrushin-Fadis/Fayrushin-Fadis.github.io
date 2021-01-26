@@ -5,15 +5,18 @@
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="style/style.css">
 </head>
-<body>
+<body id="themeBody">
 	<header>
-		<h1 class="FayrushinFadis">Fayrushin Fadis</h1>
-		<div class="topnav">
+		<h1 class="FayrushinFadis" id="themeHeader">Fayrushin Fadis</h1>
+		<div class="topnav" id="themeNav">
 			<a class="active" href="#home" title="Ты и так на главном">Home</a>
 			<a href="#blog">Blog</a>
 			<a href="#project">Project</a>
 		</div>
 	</header>
+
+	<script src="js/theme.js"></script>
+	<button onclick="theme()">Смена темы</button>
 
 	<script>
 		alert('Меня зовут Фадис, я решил создать свой сайт где буду выкладовать свои проекты и вообщем развивать его, можешь посмотреть то, что уже есть на сайте, Приятного чтения, посмотра и само собой пользования! Тебе понравиться! (=');
@@ -22,7 +25,7 @@
 
 	<div class="HomeProject">
 		<h2><a href="project\cpp\colculator.exe" download class="NoLinkDecoration">Калькулятор</a></h2>
-		<p>Калькулятор, да, обычный калькулятор, но он только на стадии разработки! Написан на C++! Данный проект создан мной как <b>Open Source</b> и его исходники можно скачать <a href="project\cpp\colculator.cpp" download class="NoLinkDecoration">здесь</a></p>
+		<p id="z">Калькулятор, да, обычный калькулятор, но он только на стадии разработки! Написан на C++! Данный проект создан мной как <b>Open Source</b> и его исходники можно скачать <a href="project\cpp\colculator.cpp" download class="NoLinkDecoration">здесь</a></p>
 	</div>
 	<hr>
 	<div class="HomeProject">
