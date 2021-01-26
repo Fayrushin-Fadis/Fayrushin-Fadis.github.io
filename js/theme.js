@@ -1,7 +1,7 @@
 'Use strict'
 
 
-function theme()
+function darkTheme()
 {
 	let timeBody = document.getElementById('themeBody')
 	timeBody.style.backgroundColor = '#333333'
@@ -9,4 +9,14 @@ function theme()
 	timeNav.style.backgroundColor = '#666666'
 	let timeHeader = document.getElementById('themeHeader')
 	timeHeader.style.backgroundColor = '#666666'
+}
+
+function whiteTheme()
+{
+	let timeBody = document.getElementById('themeBody')
+	timeBody.style.backgroundColor = '#3333CC'
+	let timeNav = document.getElementById('themeNav')
+	timeNav.style.backgroundColor = '#3300CC'
+	let timeHeader = document.getElementById('themeHeader')
+	timeHeader.style.backgroundColor = '#3300CC'
 }
