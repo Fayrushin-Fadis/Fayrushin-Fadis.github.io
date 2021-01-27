@@ -4,6 +4,7 @@ body
 	margin: 0px;
 	padding: 0px;
 	font-family: "Arial", sans-serif;
+	text-shadow: 0px 2px 2px black;
 }
 
 /* Оттеное верхней навигации */
@@ -12,6 +13,18 @@ body
     background-color: #3300CC;
     /* overflow: hidden; Стоит изучить подробно */
     text-align: center; /* Ставит навигацию по середине */
+	text-shadow: 0px 5px 2px black; /* позволяет добавлять тексту одну или несколько
+    теней, указывая их параметры через запятую. Свойство тени представляет собой описанные
+    смещения по x и y от элемента, радиус размытия и его радиус, а также цвет. */
+	width: inherit; /* Устанавливает ширину блочных или заменяемых элементов (к ним, например,
+	относится тег <img>). Ширина не включает толщину границ вокруг элемента,
+	значение отступов и полей. height: значение | проценты | auto | inherit */
+	height: inherit; /* Устанавливает высоту блочных или заменяемых элементов (к ним, например,
+	относится тег <img>). Высота не включает толщину границ вокруг элемента,
+	значение отступов и полей. height: значение | проценты | auto | inherit */
+	position: relative;
+    animation-name: navAnimation;
+    animation-duration: 2s;
 }
 
 /* Стиль ссылок внутри панели навигации */
@@ -36,7 +49,7 @@ body
 .topnav a.active /* Стоит изучить это . */
 {
     background-color: #3a4dab;
-    color: #330066;
+    color: white;
 }
 
 .FayrushinFadis
@@ -45,6 +58,9 @@ body
 	text-align: center;
 	background-color: #3300CC;
 	margin: 10px 760px 0px 760px;
+	text-shadow: 0px 5px 2px black; /* позволяет добавлять тексту одну или несколько
+    теней, указывая их параметры через запятую. Свойство тени представляет собой описанные
+    смещения по x и y от элемента, радиус размытия и его радиус, а также цвет. */
 }
 
 .HomeProject
@@ -54,8 +70,100 @@ body
 	color: #666666;
 }
 
+.HomeProject:hover
+{
+	animation-name: divAnimation;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+}
+
 .NoLinkDecoration
 {
 	text-decoration: none;
 	color: purple;
+}
+
+/* ----------------------- 
+   Кнопки смены темы
+   ----------------------- */
+
+.themeButtonBlack
+{
+	background-color: black;
+	color: white;
+	border: none; /* Свойство CSS border это универсальное свойство для указания всех
+	персональных свойств границ за раз: border-width, border-style, и border-color. */
+    cursor: pointer; /* Свойство cursorCSS определяет курсор мыши, отображаемый,
+    когда указатель мыши находится над элементом. */
+    display: inline-block;
+    margin: 5px;
+    padding: 5px;
+    font-weight: bold;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px white; /* позволяет добавлять элементу одну или несколько
+    теней, указывая их параметры через запятую. Свойство тени представляет собой описанные
+    смещения по x и y от элемента, радиус размытия и его радиус, а также цвет. */
+}
+
+.themeButtonWhite 
+{
+	background-color: white;
+	color: black;
+	border: none; /* Свойство CSS border это универсальное свойство для указания всех
+	персональных свойств границ за раз: border-width, border-style, и border-color. */
+    cursor: pointer; /* Свойство cursorCSS определяет курсор мыши, отображаемый,
+    когда указатель мыши находится над элементом. */
+    display: inline-block;
+    margin: 5px;
+    padding: 5px;
+    font-weight: bold;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px black; /* позволяет добавлять элементу одну или несколько
+    теней, указывая их параметры через запятую. Свойство тени представляет собой описанные
+    смещения по x и y от элемента, радиус размытия и его радиус, а также цвет. */
+}
+
+.themeButtonBlack:hover
+{
+	background-color: Gray;
+}
+
+.themeButtonWhite:hover
+{
+	background-color: Gray;
+}
+
+
+/* Подсветка ссылок на проекты */
+
+.NoLinkDecoration:hover
+{
+	color: MediumPurple;
+}
+
+footer
+{
+	text-align: center;
+	color: white;
+	background-color: #3300CC;
+	font-weight: bold;
+	font-size: 26px;
+	text-shadow: 0px 5px 2px black;
+	box-shadow: 0px 1px 5px black;
+}
+
+@keyframes divAnimation
+{
+	from
+	{
+		padding: 100px;
+		background-color: #333333;
+		color: #666666;
+	}
+	to
+	{
+		padding: 100px;
+		background-color: #222222;
+		color: #666666;
+	}
 }
