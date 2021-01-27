@@ -1,10 +1,35 @@
 body
 {
-	background-color: #3333CC;
+	background-color: #424242;
 	margin: 0px;
 	padding: 0px;
 	font-family: "Arial", sans-serif;
 	text-shadow: 0px 2px 2px black;
+}
+
+body:hover
+{
+	animation-name: animationBody;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes animationBody
+{
+	0%
+	{
+		background-color: #424242;
+	}
+
+	50%
+	{
+		background-color: #333333;
+	}
+
+	100%
+	{
+		background-color: #424242;
+	}
 }
 
 /* Оттеное верхней навигации */
@@ -25,6 +50,7 @@ body
 	position: relative;
     animation-name: navAnimation;
     animation-duration: 2s;
+    text-align: center;
 }
 
 /* Стиль ссылок внутри панели навигации */
@@ -56,11 +82,16 @@ body
 {
 	color: white;
 	text-align: center;
-	background-color: #3300CC;
-	margin: 10px 760px 0px 760px;
+	/* background-color: #3300CC;*/
 	text-shadow: 0px 5px 2px black; /* позволяет добавлять тексту одну или несколько
     теней, указывая их параметры через запятую. Свойство тени представляет собой описанные
     смещения по x и y от элемента, радиус размытия и его радиус, а также цвет. */
+}
+
+.FayrushinFadis:hover
+{
+	color: purple;
+	text-shadow: 0px 5px 2px MidnightBlue;
 }
 
 .HomeProject
@@ -68,6 +99,7 @@ body
 	padding: 100px;
 	background-color: #333333;
 	color: #666666;
+	margin-top: 35px;
 }
 
 .HomeProject:hover
@@ -103,6 +135,8 @@ body
     box-shadow: 0px 0px 5px white; /* позволяет добавлять элементу одну или несколько
     теней, указывая их параметры через запятую. Свойство тени представляет собой описанные
     смещения по x и y от элемента, радиус размытия и его радиус, а также цвет. */
+    float: right;
+    margin-bottom: 50px;
 }
 
 .themeButtonWhite 
@@ -121,6 +155,8 @@ body
     box-shadow: 0px 0px 10px black; /* позволяет добавлять элементу одну или несколько
     теней, указывая их параметры через запятую. Свойство тени представляет собой описанные
     смещения по x и y от элемента, радиус размытия и его радиус, а также цвет. */
+    float: right;
+    margin-bottom: 50px;
 }
 
 .themeButtonBlack:hover
@@ -152,6 +188,33 @@ footer
 	box-shadow: 0px 1px 5px black;
 }
 
+footer:hover
+{
+	animation-name: footerAnimation;
+	animation-duration: 500ms;
+	animation-fill-mode: forwards;
+}
+
+@keyframes footerAnimation
+{
+	from
+	{
+		color: white;
+		background-color: #3300CC;
+	}
+	to
+	{
+		color: purple;
+		background-color: #222222;
+	}
+}
+
+.footerLink
+{
+	display: inline-block;
+	font-size: 24px;
+}
+
 @keyframes divAnimation
 {
 	from
@@ -159,11 +222,14 @@ footer
 		padding: 100px;
 		background-color: #333333;
 		color: #666666;
+		margin-top: 35px;
 	}
 	to
 	{
 		padding: 100px;
 		background-color: #222222;
 		color: #666666;
+		margin-top: 35px;
 	}
 }
+
