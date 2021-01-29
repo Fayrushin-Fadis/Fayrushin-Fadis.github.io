@@ -3,40 +3,52 @@
 <head>
 	<title>Fayrushin Fadis</title>
 	<meta charset="UTF-8">
+	<link rel="icon" type="image/jpg" sizes="192x192" href="img\fadisLogo.jpg"> 
 	<link rel="stylesheet" href="style/style.css">
 </head>
-<body id="themeBody">
+<body id="body">
 	<header>
-		<h1 class="FayrushinFadis" id="themeHeader">Fayrushin Fadis</h1>
+		<h1 class="FayrushinFadis" id="FayrushinFadis">Fayrushin Fadis</h1>
 		<div class="topnav" id="themeNav">
-			<a class="active" href="#home" title="Ты и так на главном">Home</a>
+			<a href="#home" class="active" title="Ты и так на главном">Home</a>
 			<a href="#blog">Blog</a>
 			<a href="#project">Project</a>
 		</div>
 	</header>
 
 	<script src="js/theme.js"></script>
-	<button class="themeButtonBlack themeButton" onclick="blackTheme()">Темная тема</button>
-	<button class="themeButtonWhite themeButton" onclick="whiteTheme()">Светлая тема</button>
+	<button class="buttonBlackTheme themeButton" onclick="themeBlack()">Темная тема</button>
+	<button class="buttonWhiteTheme themeButton" onclick="themeWhite()">Светлая тема</button>
 
 	<!-- Подключи музыку на сайт, всем будет приятно: https://www.youtube.com/watch?v=ziBT_1oE3zU&t=54012s -->
 
-	<div class="HomeProject">
-		<h2><a href="project\cpp\colculator.exe" download class="NoLinkDecoration">Калькулятор</a></h2>
-		<p>Калькулятор, да, обычный калькулятор, но он только на стадии разработки! Написан на C++! Данный проект создан мной как <b>Open Source</b> и его исходники можно скачать <a href="project\cpp\colculator.cpp" download class="NoLinkDecoration">здесь</a></p>
-	</div>
-	<hr>
-	<div class="HomeProject">
-		<h2><a href="project\py\GeneratorPassword.exe" download class="NoLinkDecoration">Генератор паролей</a></h2>
-		<p>Генератор паролей, генирует численно-символьный пароль! Написан на Python! Данный проект создан мной как <b>Open Source</b> и его исходники можно скачать <a href="project\py\GeneratorPassword.py" download class="NoLinkDecoration">здесь</a></p>
+	<div class="divAnimation">
+		<div class="blockHomeProject" id="div1">
+			<h2><a href="project\cpp\colculator.exe" download class="NoLinkDecoration">Калькулятор</a></h2>
+			<p>
+				Калькулятор, да, обычный калькулятор, но он только на стадии разработки!
+				Написан на C++! Данный проект создан мной как <b>Open Source</b> и его исходники можно
+				скачать <a href="project\cpp\colculator.cpp" download class="NoLinkDecoration">здесь</a>
+			</p>
+		</div>
+		<div class="blockHomeProject" id="div2">
+			<h2><a href="project\py\GeneratorPassword.exe" download class="NoLinkDecoration">Генератор паролей</a></h2>
+			<p>
+				Генератор паролей, генирует численно-символьный пароль! Написан на Python!
+				Данный проект создан мной как <b>Open Source</b> и его исходники можно
+				скачать <a href="project\py\GeneratorPassword.py" download class="NoLinkDecoration">здесь</a>
+			</p>
+		</div>
 	</div>
 
-	<footer id="themeFooter">
+	<footer id="footer">
 		<p>
-			Меня зовут Фадис, я решил создать свой сайт где буду выкладовать свои проекты и вообщем развивать его, можешь посмотреть то, что уже есть на сайте, Приятного чтения, посмотра и само собой пользования! Тебе понравиться! (=
+			Меня зовут Фадис, я решил создать свой сайт где буду выкладовать свои проекты и вообщем
+			развивать его, можешь посмотреть то, что уже есть на сайте, Приятного чтения,
+			посмотра и само собой пользования! Тебе понравиться! (=
 			<ul class="footerLink">
-				<li class="footerLink"><a href="https://github.com/Fayrushin-Fadis" class="NoLinkDecoration">My GitHub</a></p></li>
-				<li class="footerLink"><a href="https://vk.com/fayrushinfadis" class="NoLinkDecoration">My VK</a></p></li>
+				<li class="footerLink"><a href="https://github.com/Fayrushin-Fadis" class="NoLinkDecoration">My GitHub</a></li>
+				<li class="footerLink"><a href="https://vk.com/fayrushinfadis" class="NoLinkDecoration">My VK</a></li>
 			</ul>
 		</p>
 	</footer>
