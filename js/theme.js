@@ -1,63 +1,19 @@
 'Use strict'
 
-function themeBlack()
+function themeDark()
 {
-	let timeVariable = "";
-	
-	// Fayrushin Fadis
-	timeVariable = document.getElementById('FayrushinFadis')
-	timeVariable.style.color = '#666666'
-	timeVariable.style.textShadow = 'Black 0 0 10px'
-	console.log(timeVariable)
-	
-	// body
+	let timeVariable = ""
+
 	timeVariable = document.getElementById('body')
-	timeVariable.style.backgroundColor = '#292929'
-	console.log(timeVariable)
-	
-	// div 1
-	timeVariable = document.getElementById('div1')
-	timeVariable.style.backgroundColor = '#292929'
-	console.log(timeVariable)
-	
-	// div 2
-	timeVariable = document.getElementById('div2')
-	timeVariable.style.backgroundColor = '#292929'
-	console.log(timeVariable)
-		
-	// footer
-	timeVariable = document.getElementById('footer')
-	timeVariable.style.backgroundColor = '#191919'
+	timeVariable.style.backgroundImage = "url('image/fon_dark.jpg')"
 	console.log(timeVariable)
 }
 
-function themeWhite()
+function themeLight()
 {
-	let timeVariable = "";
-	
-	// Fayrushin Fadis
-	timeVariable = document.getElementById('FayrushinFadis')
-	timeVariable.style.color = 'DarkBlue'
-	timeVariable.style.textShadow = 'steelblue 0 0 10px'
-	console.log(timeVariable)
-	
-	// body
+	let timeVariable = ""
+
 	timeVariable = document.getElementById('body')
-	timeVariable.style.backgroundColor = 'MidnightBlue'
-	console.log(timeVariable)
-	
-	// div 1
-	timeVariable = document.getElementById('div1')
-	timeVariable.style.backgroundColor = 'MidnightBlue'
-	console.log(timeVariable)
-	
-	// div 2
-	timeVariable = document.getElementById('div2')
-	timeVariable.style.backgroundColor = 'MidnightBlue'
-	console.log(timeVariable)
-		
-	// footer
-	timeVariable = document.getElementById('footer')
-	timeVariable.style.backgroundColor = 'RoyalBlue'
+	timeVariable.style.backgroundImage = "url('image/fon.jpg')"
 	console.log(timeVariable)
 }

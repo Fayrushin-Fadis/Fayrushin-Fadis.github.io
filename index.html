@@ -3,54 +3,52 @@
 <head>
 	<title>Fayrushin Fadis</title>
 	<meta charset="UTF-8">
-	<link rel="icon" type="image/jpg" sizes="192x192" href="img\fadisLogo.jpg"> 
+	<link rel="icon" type="image/jpg" sizes="192x1920" href="image/fadis_logo.jpg">
 	<link rel="stylesheet" href="style/style.css">
 </head>
 <body id="body">
 	<header>
-		<h1 class="FayrushinFadis" id="FayrushinFadis">Fayrushin Fadis</h1>
-		<div class="topnav" id="themeNav">
-			<a href="#home" class="active" title="Ты и так на главном">Home</a>
-			<a href="#blog">Blog</a>
-			<a href="#project">Project</a>
+		<div class="navigation">
+			<a href="#home" class="fadis">Fayrushin Fadis</a>
+			<a href="#home" class="fadis-nav">Home</a>
+			<a href="page/download.html" class="fadis-nav">Project</a>
 		</div>
 	</header>
 
-	<script src="js/theme.js"></script>
-	<button class="buttonBlackTheme themeButton" onclick="themeBlack()">Темная тема</button>
-	<button class="buttonWhiteTheme themeButton" onclick="themeWhite()">Светлая тема</button>
+	<script src="js/theme.js" type="text/javascript"></script>
+	<button class="button-theme-dark" onclick="themeDark()">Dark Theme</button>
+	<button class="button-theme-light" onclick="themeLight()">Light Theme</button>
 
-	<!-- Подключи музыку на сайт, всем будет приятно: https://www.youtube.com/watch?v=ziBT_1oE3zU&t=54012s -->
-
-	<div class="divAnimation">
-		<div class="blockHomeProject" id="div1">
-			<h2><a href="project\cpp\colculator.exe" download class="NoLinkDecoration">Калькулятор</a></h2>
-			<p>
-				Калькулятор, да, обычный калькулятор, но он только на стадии разработки!
-				Написан на C++! Данный проект создан мной как <b>Open Source</b> и его исходники можно
-				скачать <a href="project\cpp\colculator.cpp" download class="NoLinkDecoration">здесь</a>
-			</p>
-		</div>
-		<div class="blockHomeProject" id="div2">
-			<h2><a href="project\py\GeneratorPassword.exe" download class="NoLinkDecoration">Генератор паролей</a></h2>
-			<p>
-				Генератор паролей, генирует численно-символьный пароль! Написан на Python!
-				Данный проект создан мной как <b>Open Source</b> и его исходники можно
-				скачать <a href="project\py\GeneratorPassword.py" download class="NoLinkDecoration">здесь</a>
-			</p>
-		</div>
+	<div>
+		<img src="image/fadis_logo.jpg" class="fadis-logo">
+		<button class="button-calculator">
+			<a href="page/download.html" class="fadis">Calculator</a>
+		</button>
+		<a href="page/download.html" class="download-open-source-calculator">open source calculator</a>
+		<button class="button-generator-password">
+			<a href="page/download.html" class="fadis">Password Generator</a>
+		</button>
+		<a href="page/download.html" class="download-open-source-generator-password">open source password generator</a>
 	</div>
 
-	<footer id="footer">
-		<p>
-			Меня зовут Фадис, я решил создать свой сайт где буду выкладовать свои проекты и вообщем
-			развивать его, можешь посмотреть то, что уже есть на сайте, Приятного чтения,
-			посмотра и само собой пользования! Тебе понравиться! (=
-			<ul class="footerLink">
-				<li class="footerLink"><a href="https://github.com/Fayrushin-Fadis" class="NoLinkDecoration">My GitHub</a></li>
-				<li class="footerLink"><a href="https://vk.com/fayrushinfadis" class="NoLinkDecoration">My VK</a></li>
-			</ul>
-		</p>
+	<footer>
+		<div class="footer-text">
+			<!-- Тег и его атрибут двигают текст -->
+			<marquee direction="down">
+				<p>
+					Автор сайта не несет отвественность за размещенный на нем контент, ровно как и не несет ответсвенность за программы размещенный на данном сайте. 
+				</p>
+				<p>
+					Сайт создан сугубо из интересов Автора и не принуждает никого его посещать, просматривать, скачивать контент. Все ващи действия на ваш страх и риск.
+				</p>
+				<p>
+					Программы размещенные на сайте распространяются под линцензией Open Source, вы имеете полное право скачивать, изменять, распространять программное обеспечение без разрешения и упоминания его автора.
+				</p>
+				<p>
+					Автор не несет отвественность за нестабильную работу программного обеспечения или какой-либо вред вашему компьютеру. Напоминаю, все действия сугобо на ваш страх и риск!
+				</p>
+			</marquee>
+		</div>
 	</footer>
 </body>
 </html>
