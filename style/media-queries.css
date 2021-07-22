@@ -1,0 +1,22 @@
+@media only screen and (max-width: 768px)
+{
+	header
+	{
+		display:										flex;
+		justify-content: 								center;
+		flex-wrap:										wrap;
+	}
+
+	.position-content
+	{
+		display:										flex;
+		margin: 										50px;
+		flex-wrap:										wrap;
+	}
+
+	footer
+	{
+		bottom:											auto;
+	}
+
+}

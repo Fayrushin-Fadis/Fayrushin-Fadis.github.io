@@ -4,194 +4,105 @@ body
 	margin: 										0px;
 	font-family:									"Arial", sans-serif;
 	font-size:										16px;
-	background-color: 								#6600CC;
-	text-shadow:									0 2px 2px black;
-	background-image:								url(../image/fon.jpg)
+	color: 											#6957C7;
 }
 
 header
 {
 	padding:										15px;
 	background-color:								#330066;
-	opacity:										90%;
-	box-shadow:										0 0 10px rgba(0,0,0,0.5); 
-}
-
-.fadis
-{
-	font-size:										36px;
-	font-weight:									600;
-	text-decoration: 								none;
-	color:											#9966FF;
-}
-
-.fadis:hover
-{
-	color: 											#99CCFF;
-}
-
-.navigation
-{
-	text-align:										left;
-}
-
-.fadis-nav
-{
-	text-decoration: 								none;
-	color:											#9966FF;
-	font-size:										26px;
-	font-weight:									600;
-	padding-left:									30px;
-}
-
-.fadis-nav:hover
-{
-	color: red;
-}
-
-.fadis-logo
-{
-	margin:											50px;
 	box-shadow:										0 0 10px rgba(0,0,0,0.5);
+	display:										flex;
+	justify-content: 								center;
 }
 
-.fadis-logo:hover
+.logo-text, .button-theme, .button-open-projects
 {
-	animation-name: 								fadis-logo;
+	font-weight: 									bold;
+	color: 											#6957C7;
+	font-size:										35px;
+	margin-left:									30px;
+	margin-right:									30px;
+}
+
+.logo-text:hover, .button-theme:hover, .button-open-projects:hover
+{
+	color: 											#9FA0DF;
+}
+
+.button-theme, .button-open-projects
+{
+	background-color:								#330066;
+	border:											none;
+	outline:										none;
+}
+
+.position-content
+{
+	display:										flex;
+	margin: 										50px;
+}
+
+.logo-img
+{
+
+}
+
+.content-about-me
+{
+	font-size:										18px;
+	margin: 										50px;
+}
+
+footer
+{
+	position:										absolute;
+	padding:										15px;
+	background-color:								#330066;
+	box-shadow:										0 0 10px rgba(0,0,0,0.5);
+	display:										flex;
+	justify-content: 								center;
+	bottom:											0;
+	width:											100%;
+}
+
+.light-theme
+{
+	background-color:								#330066;
+}
+
+.dark-theme
+{
+	background-color:								#0F0F2E;
+}
+
+/* ================================ Other ==================================== */
+
+.link-no-line
+{
+	color: 											#6957C7;
+	text-decoration:								none;
+}
+
+.link-no-line:hover
+{
+	color: 											#9FA0DF;
+}
+
+/* ============================== Animation ================================== */
+
+.animation-content:hover
+{
+	animation-name: 								animation-content;
 	animation-duration: 							2s;
 	animation-iteration-count: 						infinite;
 }
 
-@keyframes fadis-logo
+@keyframes animation-content
 {
 	0% { transform:									skew(0deg) }
-	25% { transform:								skew(2deg, 2deg) }
+	25% { transform:								skew(0.3deg, 0.3deg) }
 	50% { transform:								skew(0deg) }
-	75% { transform:								skew(-2deg, -2deg) }
+	75% { transform:								skew(-0.3deg, -0.3deg) }
 	100% { transform:								skew(0deg) }
-}
-
-.button-calculator, .download-open-source-calculator
-{
-	background-color: 								#330066;
-	opacity: 										70%;
-	padding:										15px;
-	cursor:											pointer;
-	border-radius:									40px;
-	position:										absolute;
-	right:											350px;
-	top:											300px;
-	box-shadow:										0 0 10px rgba(0,0,0,0.5);
-	color:											#9966FF;
-	border:											0;
-	box-shadow:										0px 5px 1px rgba(0,0,0,1);
-}
-
-.button-generator-password, .download-open-source-generator-password
-{
-	background-color: 								#330066;
-	opacity: 										70%;
-	padding:										15px;
-	cursor:											pointer;
-	border-radius:									40px;
-	position:										absolute;
-	right:											650px;
-	top:											300px;
-	box-shadow:										0 0 10px rgba(0,0,0,0.5);
-	color:											#9966FF;
-	border:											0;
-	box-shadow:										0px 5px 1px rgba(0,0,0,1);
-}
-
-.button-calculator:hover, .button-generator-password:hover,
-.download-open-source-calculator:hover, .download-open-source-generator-password:hover
-{
-	background-color: 								#6633CC;
-	color: 											#99CCFF;
-}
-
-.download-open-source-calculator
-{
-	right:											360px;
-	top:											390px;
-	background-color: 								#330066;
-	color:											#9966FF;
-	text-decoration: 								none;
-}
-
-.download-open-source-generator-password
-{
-	right:											700px;
-	top:											390px;
-	background-color: 								#330066;
-	color:											#9966FF;
-	text-decoration: 								none;
-}
-
-.footer-text
-{
-	text-align:										center;
-	padding:										100px;
-	margin-top:										180px;
-	background-color:								#330066;
-	opacity:										70%; 
-	color:											#9999CC;
-}
-
-/* Настройки тега отвечающего за движение предупредительного текста */
-marquee
-{
-	margin:											-70px;
-	padding:										0px;
-	text-align:										center;
-}
-
-.button-calculator:active, .button-generator-password:active
-{
-	animation-name: 								button-animation;
-	animation-duration: 							130ms;
-}
-
-@keyframes button-animation
-{
-	from { top:										300px; }
-	to { top:										290px; }
-}
-
-.download-open-source-calculator:active, .download-open-source-generator-password:active
-{
-	animation-name: 								button-animation2;
-	animation-duration: 							100ms;
-}
-
-@keyframes button-animation2
-{
-	from { top:										390px; }
-	to { top:										385px; }
-}
-
-.button-theme-dark, .button-theme-light
-{
-
-	border:											none; /* Все свойства границ вместе: border-width, border-style, border-color. */
-    cursor:											pointer;
-    margin:											5px;
-    padding:										5.5px;
-    border-radius:									7px;
-    box-shadow:										0 0 4px black;
-	float:											right; /* Местонахождение */
-	opacity:										35%;
-}
-
-.button-theme-dark
-{
-	background-color:								black;
-	color:											white;
-}
-.button-theme-light
-{
-	background-color:								white;
-	color:											black;
-	padding:										5px;
-	box-shadow:										0 0 3px white;
 }

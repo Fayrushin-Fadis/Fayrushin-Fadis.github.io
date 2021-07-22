@@ -1,19 +1,11 @@
 'Use strict'
 
-function themeDark()
+let timeVariable = ""
+timeVariable = document.querySelector('.theme')
+
+function theme()
 {
-	let timeVariable = ""
-
-	timeVariable = document.getElementById('body')
-	timeVariable.style.backgroundImage = "url('image/fon_dark.jpg')"
-	console.log(timeVariable)
-}
-
-function themeLight()
-{
-	let timeVariable = ""
-
-	timeVariable = document.getElementById('body')
-	timeVariable.style.backgroundImage = "url('image/fon.jpg')"
+	timeVariable.classList.toggle('light-theme')
+	timeVariable.classList.toggle('dark-theme')
 	console.log(timeVariable)
 }

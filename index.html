@@ -1,54 +1,56 @@
 <!DOCTYPE html>
+
 <html>
+
 <head>
-	<title>Fairushin Fadis</title>
 	<meta charset="UTF-8">
-	<link rel="icon" type="image/jpg" sizes="192x1920" href="image/fadis_logo.jpg">
-	<link rel="stylesheet" href="style/style.css">
+	<title>Fairushin Fadis</title>
+	<link rel="icon" type="image/jpg" sizes="192x192" href="img/fadis_logo.jpg">
+	<link rel="stylesheet" href="style/style.css" type="text/css">
+	<link rel="stylesheet" href="style/media-queries.css" type="text/css">
 </head>
-<body id="body">
+
+<body class="theme light-theme">
 	<header>
-		<div class="navigation">
-			<a href="#home" class="fadis">Fairushin Fadis</a>
-			<a href="#home" class="fadis-nav">Home</a>
-			<a href="page/download.html" class="fadis-nav">Project</a>
-		</div>
+		<div class="logo-text">Fairushin Fadis</div>
+		<button onclick="theme()" class="button-theme">Theme</button>
+		<button class="button-open-projects">
+			<a href="https://github.com/Fairushin-Fadis?tab=repositories" class="link-no-line">Open projects</a>
+		</button>
 	</header>
 
-	<script src="js/theme.js" type="text/javascript"></script>
-	<button class="button-theme-dark" onclick="themeDark()">Dark Theme</button>
-	<button class="button-theme-light" onclick="themeLight()">Light Theme</button>
+	<div class="position-content animation-content">
+		<div class="logo-img">
+			<img src="img/logo-img.jpg" width="400">
+		</div>
 
-	<div>
-		<img src="image/fadis_logo.jpg" class="fadis-logo">
-		<button class="button-calculator">
-			<a href="page/download.html" class="fadis">Calculator</a>
-		</button>
-		<a href="page/download.html" class="download-open-source-calculator">open source calculator</a>
-		<button class="button-generator-password">
-			<a href="page/download.html" class="fadis">Password Generator</a>
-		</button>
-		<a href="page/download.html" class="download-open-source-generator-password">open source password generator</a>
+		<div class="content-about-me">
+			<div>
+				<h2>Немного обо мне</h2>
+				<p>
+					Я начинающий разработчик, занимаюсь в основном разработкой 
+					простых прикладных программ, но мои знания не ограничиваются 
+					только на этом. Это можно увидеть, посетив мой профиль  
+					<a href="https://github.com/Fairushin-Fadis">github</a>
+				</p>
+			</div>
+
+			<div>
+				<h2>Причина создания этого сайта</h2>
+				<p>
+					Сайт не несет в себе особой смысловой нагрузки, это 
+					просто-напросто проверка моих знаний и умений применять 
+					эти знания на практике.
+				</p>
+			</div>
+		</div>
 	</div>
 
 	<footer>
-		<div class="footer-text">
-			<!-- Тег и его атрибут двигают текст -->
-			<marquee direction="down">
-				<p>
-					Автор сайта не несет отвественность за размещенный на нем контент, ровно как и не несет ответсвенность за программы размещенный на данном сайте. 
-				</p>
-				<p>
-					Сайт создан сугубо из интересов Автора и не принуждает никого его посещать, просматривать, скачивать контент. Все ващи действия на ваш страх и риск.
-				</p>
-				<p>
-					Программы размещенные на сайте распространяются под линцензией Open Source, вы имеете полное право скачивать, изменять, распространять программное обеспечение без разрешения и упоминания его автора.
-				</p>
-				<p>
-					Автор не несет отвественность за нестабильную работу программного обеспечения или какой-либо вред вашему компьютеру. Напоминаю, все действия сугобо на ваш страх и риск!
-				</p>
-			</marquee>
+		<div>
+			<div>Подвал в разработке</div>
 		</div>
 	</footer>
+	<script src="js/theme.js" type="text/javascript"></script>
 </body>
 </html>
