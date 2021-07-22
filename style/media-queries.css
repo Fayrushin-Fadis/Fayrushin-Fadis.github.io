@@ -1,22 +1,29 @@
 @media only screen and (max-width: 768px)
 {
+	body
+	{
+		text-align:										center;
+	}
+
 	header
 	{
-		display:										flex;
-		justify-content: 								center;
-		flex-wrap:										wrap;
+		display:										block;
 	}
 
 	.position-content
 	{
-		display:										flex;
-		margin: 										50px;
-		flex-wrap:										wrap;
+		display:										block;
+		margin:											0px;
+	}
+
+	.logo-img
+	{	
+		width:											auto;
+		margin:											50px;
 	}
 
 	footer
 	{
-		bottom:											auto;
+		position:										static;
 	}
-
 }
